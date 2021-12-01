@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --grå: #0808088a;
+    --rød: #730202;
+    --lys: #F2EEB3;
+    --mørkgrøn: #222601;
+    --lysgrøn: #384002;
+    --hvid: #ffff;
+    --sort: #000000;
+  }
+  
+  html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
