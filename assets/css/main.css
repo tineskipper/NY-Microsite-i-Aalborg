@@ -642,13 +642,22 @@
 
 
   /*tivoli slut*/
-   /*juletræstænding med julemanden start*/
 
 
+.juletraestaending-text h1 {
+background-color: black;
+color: white;
+margin: 0.5rem 0;
+text-align: center;
+}
 
+.juletraestaending-text p {
+  background-color: red;
+}
 
-
-
+.juletraestaending-program {
+  background-color: rgb(151, 151, 116);
+}
 
 
 
