@@ -642,7 +642,18 @@
 
 
   /*tivoli slut*/
-
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "headline-one headline-one"
+    "headline-two headline-two"
+    "text text"
+    "program img-one"
+    "program img-two";
+    
+  }
 
 .juletraestaending-text h1 {
 background-color: black;
@@ -651,22 +662,31 @@ margin: 0.5rem 0;
 text-align: center;
 }
 
+.headline-one {
+  grid-area: headline-one;
+}
+
+.headline-two {
+  grid-area: headline-two;
+}
+
 .juletraestaending-text p {
   background-color: red;
+  grid-area: text;
 }
 
 .juletraestaending-program {
   background-color: rgb(151, 151, 116);
+  grid-area: program;
 }
 
+.img-juletrae {
+  grid-area: img-one;
+}
 
-
-
-
-
-
-
-
+.img-julemand {
+  grid-area: img-two;
+}
 
 
 
