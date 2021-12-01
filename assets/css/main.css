@@ -17,13 +17,14 @@
   html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
+    letter-spacing: 0.2rem;
   }
   
   img {
     max-width: 100%;
   }
 
-
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 
 
 
@@ -543,21 +544,25 @@
 
 /*boder slut*/
 .page-color {
- background-color: red;
+ background-color:var(--rød);
   }
 
 .tivoli-title {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.397);
+  padding: 0.3rem;
   text-align: center;
-  margin: 0 5%;
+  margin: 0 4%;
+  font-size: 2.2rem;
+  letter-spacing: 0.5rem;
+  font-family: "Amiri";
 }
 
 .tivoli-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  margin: 5%;
+  margin: 3% 4%;
   }
 
 .tivoli-grid-container article {
@@ -570,13 +575,30 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: beige;
+  background-color: #f2eeb3a6;
   padding: 1rem;
-  margin-bottom: 20%;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
  }
 
+ .tivoli-text-container h4 {
+   font-weight: normal;
+   font-family: "Amiri";
+   font-size: 1.3rem;
+   letter-spacing: 0.2rem;
+ }
 
+ .tivoli-price {
+ padding: 5% 0;
+ font-size: 1.1rem;
+ }
 
+ @media screen and (max-width: 767px) {
+  .tivoli-grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+ }
 
 
 
