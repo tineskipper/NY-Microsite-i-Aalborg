@@ -561,7 +561,7 @@
 .tivoli-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr;
   margin: 3% 4%;
   }
 
@@ -595,8 +595,11 @@
 
  @media screen and (max-width: 767px) {
   .tivoli-grid-container {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+  }
+  .tivoli-title {
+    font-size: 8vw;
   }
  }
 
