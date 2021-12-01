@@ -541,11 +541,39 @@
 
 
 
-  /*boder slut*/
-   /*tivoli start*/
+/*boder slut*/
+.page-color {
+ background-color: red;
+  }
 
+.tivoli-title {
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin: 0 5%;
+}
 
+.tivoli-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 5%;
+  }
 
+.tivoli-grid-container article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tivoli-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: beige;
+  padding: 1rem;
+  margin-bottom: 20%;
+ }
 
 
 
