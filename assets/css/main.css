@@ -543,7 +543,7 @@
 
 
 /*boder slut*/
-.page-color {
+.tivoli-page-color {
  background-color:var(--rød);
   }
 
@@ -553,11 +553,11 @@
   width: 12%;
 }
 
-.left-side {
+.tivoli-banner-left-side {
   float: left;
 }
 
-.right-side {
+.tivoli-banner-right-side {
   float: right;
 }
 
