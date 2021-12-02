@@ -648,20 +648,29 @@ img {
 }
 
 .juletraestaending-banner {
-  background-color: green;
-  height: 160vh;
-  width: 12%;
+  background-image: url(../img/Julebanner.jpg);
+  background-position: center;
+  height: 200vh;
+  width: 10%;
   float: left;
 }
 
+.juletraestaending-banner-left-side {
+  float: left;
+  margin-right: 3%;
+}
+
+.juletraestaending-banner-right-side {
+  float: right;
+  margin-left: 3%;
+}
 
 .juletraestaending-title {
+text-align: center;
 color:var(--hvid);
 background-color: rgba(0, 0, 0, 0.411);
-text-align: center;
-margin: 0 4%;
 font-family: "Amiri";
-font-size: 3vw;
+font-size: 2rem;
 letter-spacing: 0.5rem;
 }
 
@@ -672,31 +681,30 @@ letter-spacing: 0.5rem;
 .juletraestanding-text {
   margin: 3% 4%;
   color: var(--hvid);
-  font-size: 1.4vw;
+  font-size: 0.8rem;
 }
 
 .juletraestaending-program-grid-container {
   display: grid;
   grid-template-columns: 0.8fr 0.8fr;
   grid-template-rows: 1.2fr 1.2fr;
-  margin: 0% 4% 15% 4%;
-  }
+}
 
 .juletraestaending-program-text-container {
   grid-row: span 2;
   background-color: #f2eeb398;
-  padding: 5%;
-  font-size: 1.2vw;
-  }
+  padding: 2%;
+  font-size: 0.7rem;
+}
 
 .juletraestaending-program-text-container li {
   list-style: none;
   margin: 1.1rem 0;
-  }
+}
 
 .juletraestaending-program-text-container h4 {
   font-family: "Amiri";
-  font-size: 1.9vw;
+  font-size: 1rem;
   letter-spacing: 0.2rem;
   font-weight: normal;
   text-align: center;
@@ -707,6 +715,11 @@ letter-spacing: 0.5rem;
   font-size: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .juletraestaending-banner {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .juletraestaending-program-grid-container {
@@ -718,26 +731,10 @@ letter-spacing: 0.5rem;
   .juletrae-img {
     display: none;
   }
-
   .juletraestaending-title {
-    letter-spacing: 0.3rem;
-    font-size: 1rem;
-  }
-  .juletraestaending-program-text-container h4 {
-    font-size: 3vw;
+    font-size: 7vw;
   }
 
-  .juletraestaending-program-text-container li {
-    margin: 0.5rem 0;
-    }
-
-    .juletraestaending-program-text-container {
-      font-size: 2vw;
-    }
-
-    .juletraestanding-text {
-      font-size: 2vw;
-    }
 }
 
 
