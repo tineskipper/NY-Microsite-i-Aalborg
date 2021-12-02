@@ -642,51 +642,96 @@
 
 
   /*tivoli slut*/
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-    "headline-one headline-one"
-    "headline-two headline-two"
-    "text text"
-    "program img-one"
-    "program img-two";
-    
-  }
-
-.juletraestaending-text h1 {
-background-color: black;
-color: white;
-margin: 0.5rem 0;
-text-align: center;
-}
-
-.headline-one {
-  grid-area: headline-one;
-}
-
-.headline-two {
-  grid-area: headline-two;
-}
-
-.juletraestaending-text p {
-  background-color: red;
-  grid-area: text;
-}
-
-.juletraestaending-program {
-  background-color: rgb(151, 151, 116);
-  grid-area: program;
-}
-
-.img-juletrae {
-  grid-area: img-one;
-}
-
-.img-julemand {
-  grid-area: img-two;
-}
+  .tivoli-page-color {
+    background-color:var(--rød);
+     }
+   
+   .tivoli-banner {
+     background-color: green;
+     height: 160vh;
+     width: 12%;
+   }
+   
+   .tivoli-banner-left-side {
+     float: left;
+   }
+   
+   .tivoli-banner-right-side {
+     float: right;
+   }
+   
+   .tivoli-title {
+     color: white;
+     background-color: rgba(0, 0, 0, 0.397);
+     padding: 0.3rem;
+     text-align: center;
+     margin: 0 4%;
+     font-size: 2.2rem;
+     letter-spacing: 0.5rem;
+     font-family: "Amiri";
+   }
+   
+   .tivoli-grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     margin: 3% 4%;
+     }
+   
+   .tivoli-grid-container article {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+   }
+   
+   .tivoli-text-container {
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+     background-color: #f2eeb398;
+     padding: 1rem;
+     margin-bottom: 2rem;
+     font-size: 0.9rem;
+    }
+   
+    .tivoli-text-container h4 {
+      font-weight: normal;
+      font-family: "Amiri";
+      font-size: 1.3rem;
+      letter-spacing: 0.2rem;
+    }
+   
+    .tivoli-price {
+    padding: 5% 0;
+    font-size: 1.1rem;
+    }
+   
+    @media screen and (max-width: 767px) {
+     .tivoli-grid-container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr; 
+     }
+     .tivoli-title {
+       font-size: 8vw;
+     }
+   
+     .tivoli-banner {
+       display: none;
+     }
+    }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
 
 
