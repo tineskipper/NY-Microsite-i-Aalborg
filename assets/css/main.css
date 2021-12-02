@@ -647,6 +647,14 @@ img {
   background-color: var(--rød);
 }
 
+.juletraestaending-banner {
+  background-color: green;
+  height: 160vh;
+  width: 12%;
+  float: left;
+}
+
+
 .juletraestaending-title {
 color:var(--hvid);
 background-color: rgba(0, 0, 0, 0.411);
@@ -699,19 +707,6 @@ letter-spacing: 0.5rem;
   font-size: 0;
 }
 
-.juletraestaending-banner {
-  background-color: green;
-  height: 160vh;
-  width: 12%;
-}
-
-.juletraestaending-banner-left-side {
-  float: left;
-}
-
-.juletraestaending-banner-left-side {
-  float: right;
-}
 
 @media screen and (max-width: 767px) {
   .juletraestaending-program-grid-container {
