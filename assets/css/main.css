@@ -4,26 +4,27 @@
     box-sizing: border-box;
   }
   
-  :root {
-    --grå: #0808088a;
-    --rød: #730202;
-    --lys: #F2EEB3;
-    --mørkgrøn: #222601;
-    --lysgrøn: #384002;
-    --hvid: #ffff;
-    --sort: #000000;
+:root {
+  --grå: #0808088a;
+  --rød: #730202;
+  --lys: #F2EEB3;
+  --mørkgrøn: #222601;
+  --lysgrøn: #384002;
+  --hvid: #ffff;
+  --sort: #000000;
   }
   
-  html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
-  }
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.2rem;
+}
   
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 
 
 
@@ -541,8 +542,8 @@
 
 
 
-  /*boder slut*/
-   /*tivoli start*/
+/*boder slut*/
+/*tivoli start*/
 
 
 
@@ -641,7 +642,71 @@
 
 
 
-  /*tivoli slut*/
+/*tivoli slut*/
+.juletraestaending-page-color {
+  background-color: var(--rød);
+}
+
+.juletraestaending-title {
+color:var(--hvid);
+background-color: rgba(0, 0, 0, 0.411);
+text-align: center;
+margin: 0 4%;
+font-family: "Amiri";
+font-size: 2.2rem;
+letter-spacing: 0.5rem;
+}
+
+.juletraestaending-title-margin {
+  margin-bottom: 0.4rem;
+}
+
+.juletraestanding-text {
+  margin: 3% 4%;
+  color: var(--hvid);
+}
+
+.juletraestaending-program-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 3% 4%;
+  }
+
+.juletraestaending-program-text-container {
+  grid-row: span 2;
+  background-color: #f2eeb398;
+  padding: 1rem;
+  font-size: 0.9rem;
+  }
+
+.juletraestaending-program-text-container li {
+  list-style: none;
+  margin: 1.1rem 0;
+  }
+
+.juletraestaending-program-text-container h4 {
+  font-family: "Amiri";
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* @media screen and (max-width: 767px) {
+  .juletraestaending-program-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;  
+} */
+
+
+
+
+
+
+/* 
   .tivoli-page-color {
     background-color:var(--rød);
      }
@@ -719,7 +784,7 @@
        display: none;
      }
     }
-   
+    */
    
    
    
