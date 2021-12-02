@@ -653,7 +653,7 @@ background-color: rgba(0, 0, 0, 0.411);
 text-align: center;
 margin: 0 4%;
 font-family: "Amiri";
-font-size: 2.2rem;
+font-size: 3vw;
 letter-spacing: 0.5rem;
 }
 
@@ -664,21 +664,21 @@ letter-spacing: 0.5rem;
 .juletraestanding-text {
   margin: 3% 4%;
   color: var(--hvid);
+  font-size: 1.4vw;
 }
 
 .juletraestaending-program-grid-container {
   display: grid;
-  height: 1vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1.5fr;
   margin: 3% 4%;
   }
 
 .juletraestaending-program-text-container {
   grid-row: span 2;
   background-color: #f2eeb398;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 5%;
+  font-size: 1.2vw;
   }
 
 .juletraestaending-program-text-container li {
@@ -688,15 +688,16 @@ letter-spacing: 0.5rem;
 
 .juletraestaending-program-text-container h4 {
   font-family: "Amiri";
-  font-size: 1.3rem;
+  font-size: 1.8vw;
   letter-spacing: 0.2rem;
   font-weight: normal;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
-
-
+.image-container {
+  grid-row: span 2;
+  margin: 0%;
+}
 
 /* @media screen and (max-width: 767px) {
   .juletraestaending-program-grid-container {
