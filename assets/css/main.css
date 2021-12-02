@@ -668,6 +668,7 @@ letter-spacing: 0.5rem;
 
 .juletraestaending-program-grid-container {
   display: grid;
+  height: 1vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 3% 4%;
@@ -693,6 +694,9 @@ letter-spacing: 0.5rem;
   margin-bottom: 2rem;
   text-align: center;
 }
+
+
+
 
 /* @media screen and (max-width: 767px) {
   .juletraestaending-program-grid-container {
