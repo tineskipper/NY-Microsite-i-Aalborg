@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --grå: #0808088a;
   --rød: #730202;
@@ -12,19 +12,17 @@
   --lysgrøn: #384002;
   --hvid: #ffff;
   --sort: #000000;
-  }
-  
+}
+
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 22px;
-  letter-spacing: 0.2rem;
 }
-  
+
 img {
   max-width: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 
 
 
@@ -41,8 +39,8 @@ img {
 
 
 
-  /*nav start*/
 
+/*nav start*/
 
 
 
@@ -140,9 +138,8 @@ img {
 
 
 
-  /*nav slut*/
-  /*forside start*/
 
+/*nav slut*/
 
 
 
@@ -211,137 +208,12 @@ img {
 
 
 
+ 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*forside slut*/
-  /*boder start*/
+/*forside slut*/
+/*boder start*/
 
 
 
@@ -543,7 +415,7 @@ img {
 
 
 /*boder slut*/
-/*tivoli start*/
+ /*tivoli start*/
 
 
 
@@ -643,165 +515,7 @@ img {
 
 
 /*tivoli slut*/
-.juletraestaending-page-color {
-  background-color: var(--rød);
-}
-
-.juletraestaending-title {
-color:var(--hvid);
-background-color: rgba(0, 0, 0, 0.411);
-text-align: center;
-margin: 0 4%;
-font-family: "Amiri";
-font-size: 3vw;
-letter-spacing: 0.5rem;
-}
-
-.juletraestaending-title-margin {
-  margin-bottom: 0.4rem;
-}
-
-.juletraestanding-text {
-  margin: 3% 4%;
-  color: var(--hvid);
-  font-size: 1.4vw;
-}
-
-.juletraestaending-program-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 1fr 1.5fr;
-  margin: 3% 4%;
-  }
-
-.juletraestaending-program-text-container {
-  grid-row: span 2;
-  background-color: #f2eeb398;
-  padding: 5%;
-  font-size: 1.2vw;
-  }
-
-.juletraestaending-program-text-container li {
-  list-style: none;
-  margin: 1.1rem 0;
-  }
-
-.juletraestaending-program-text-container h4 {
-  font-family: "Amiri";
-  font-size: 1.8vw;
-  letter-spacing: 0.2rem;
-  font-weight: normal;
-  text-align: center;
-}
-
-.image-container {
-  grid-row: span 2;
-  margin: 0%;
-}
-
-/* @media screen and (max-width: 767px) {
-  .juletraestaending-program-grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;  
-} */
-
-
-
-
-
-
-/* 
-  .tivoli-page-color {
-    background-color:var(--rød);
-     }
-   
-   .tivoli-banner {
-     background-color: green;
-     height: 160vh;
-     width: 12%;
-   }
-   
-   .tivoli-banner-left-side {
-     float: left;
-   }
-   
-   .tivoli-banner-right-side {
-     float: right;
-   }
-   
-   .tivoli-title {
-     color: white;
-     background-color: rgba(0, 0, 0, 0.397);
-     padding: 0.3rem;
-     text-align: center;
-     margin: 0 4%;
-     font-size: 2.2rem;
-     letter-spacing: 0.5rem;
-     font-family: "Amiri";
-   }
-   
-   .tivoli-grid-container {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr;
-     margin: 3% 4%;
-     }
-   
-   .tivoli-grid-container article {
-     display: flex;
-     flex-direction: column;
-     gap: 1.5rem;
-   }
-   
-   .tivoli-text-container {
-     display: flex;
-     flex-direction: column;
-     gap: 0.5rem;
-     background-color: #f2eeb398;
-     padding: 1rem;
-     margin-bottom: 2rem;
-     font-size: 0.9rem;
-    }
-   
-    .tivoli-text-container h4 {
-      font-weight: normal;
-      font-family: "Amiri";
-      font-size: 1.3rem;
-      letter-spacing: 0.2rem;
-    }
-   
-    .tivoli-price {
-    padding: 5% 0;
-    font-size: 1.1rem;
-    }
-   
-    @media screen and (max-width: 767px) {
-     .tivoli-grid-container {
-       grid-template-columns: 1fr;
-       grid-template-rows: 1fr 1fr; 
-     }
-     .tivoli-title {
-       font-size: 8vw;
-     }
-   
-     .tivoli-banner {
-       display: none;
-     }
-    }
-    */
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+ /*juletræstænding med julemanden start*/
 
 
 
@@ -885,8 +599,6 @@ letter-spacing: 0.5rem;
 
 
 
-  /*juletræstænding med julemanden slut*/
-   /*julelystænding start*/
 
 
 
@@ -902,6 +614,8 @@ letter-spacing: 0.5rem;
 
 
 
+/*juletræstænding med julemanden slut*/
+ /*julelystænding start*/
 
 
 
@@ -985,8 +699,6 @@ letter-spacing: 0.5rem;
 
 
 
-  /*julelystænding slut*/
-   /*historie start*/
 
 
 
@@ -1002,6 +714,8 @@ letter-spacing: 0.5rem;
 
 
 
+/*julelystænding slut*/
+ /*historie start*/
 
 
 
@@ -1085,8 +799,6 @@ letter-spacing: 0.5rem;
 
 
 
-  /*historie slut*/
-   /*det sker også i aalborg start*/
 
 
 
@@ -1102,6 +814,8 @@ letter-spacing: 0.5rem;
 
 
 
+/*historie slut*/
+ /*det sker også i aalborg start*/
 
 
 
@@ -1185,4 +899,19 @@ letter-spacing: 0.5rem;
 
 
 
-  /*det sker også i aalborg slut*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*det sker også i aalborg slut*/
