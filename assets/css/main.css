@@ -669,9 +669,9 @@ letter-spacing: 0.5rem;
 
 .juletraestaending-program-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 1fr 1.5fr;
-  margin: 3% 4%;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 1.2fr 1.2fr;
+  margin: 0% 4% 15% 4%;
   }
 
 .juletraestaending-program-text-container {
@@ -688,7 +688,7 @@ letter-spacing: 0.5rem;
 
 .juletraestaending-program-text-container h4 {
   font-family: "Amiri";
-  font-size: 1.8vw;
+  font-size: 1.9vw;
   letter-spacing: 0.2rem;
   font-weight: normal;
   text-align: center;
@@ -696,16 +696,40 @@ letter-spacing: 0.5rem;
 
 .image-container {
   grid-row: span 2;
-  margin: 0%;
+  font-size: 0;
 }
 
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .juletraestaending-program-grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;  
-} */
+    grid-template-rows: 0.8fr 1fr;  
+  }
 
+  .juletrae-img {
+    display: none;
+  }
+
+  .juletraestaending-title {
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+  }
+  .juletraestaending-program-text-container h4 {
+    font-size: 3vw;
+  }
+
+  .juletraestaending-program-text-container li {
+    margin: 0.5rem 0;
+    }
+
+    .juletraestaending-program-text-container {
+      font-size: 2vw;
+    }
+
+    .juletraestanding-text {
+      font-size: 2vw;
+    }
+}
 
 
 
