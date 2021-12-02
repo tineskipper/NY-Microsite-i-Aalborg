@@ -966,11 +966,12 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     text-align: center;
-    margin: 0.5rem 1rem 0.5rem;
+    margin: 0.5rem 1rem 1rem;
     color: var(--hvid);
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.3rem;
   }
 
   .aalborg-article1{
@@ -1054,10 +1055,11 @@ height: 1.5rem;
   .aalborg-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr; 
+    
   }
 
   .aalborg-article img {
-    width: 200px;
+    
   }
   
 
