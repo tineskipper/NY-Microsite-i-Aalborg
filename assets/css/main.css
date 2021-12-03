@@ -541,24 +541,26 @@
 
 
 
-
 /*boder slut*/
 .tivoli-page-color {
  background-color:var(--rød);
   }
 
 .tivoli-banner {
-  background-color: green;
+  background-image: url(../img/Julebanner.jpg);
+  background-position: center;
   height: 160vh;
-  width: 12%;
+  width: 10%;
 }
 
 .tivoli-banner-left-side {
   float: left;
+  margin-right: 3%;
 }
 
 .tivoli-banner-right-side {
   float: right;
+  margin-left: 3%;
 }
 
 .tivoli-title {
@@ -615,16 +617,13 @@
   .tivoli-title {
     font-size: 8vw;
   }
+ }
 
+ @media screen and (max-width: 1023px) {
   .tivoli-banner {
     display: none;
   }
- }
-
-
-
-
-
+}
 
 
 
