@@ -20,11 +20,11 @@
     letter-spacing: 0.2rem;
   }
   
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 
 
 
@@ -1374,6 +1374,8 @@ grid-template-areas:
 
 
 
+/*boder slut*/
+/*tivoli start*/
 
 
 
@@ -1474,21 +1476,196 @@ grid-template-areas:
 
 
 
+/*tivoli slut*/
+.juletraestaending-page-color {
+  background-color: var(--rød);
+}
+
+.juletraestaending-banner {
+  background-image: url(../img/Julebanner.jpg);
+  background-position: center;
+  height: 200vh;
+  width: 10%;
+  float: left;
+}
+
+.juletraestaending-banner-left-side {
+  float: left;
+  margin-right: 3%;
+}
+
+.juletraestaending-banner-right-side {
+  float: right;
+  margin-left: 3%;
+}
+
+.juletraestaending-title {
+text-align: center;
+color:var(--hvid);
+background-color: rgba(0, 0, 0, 0.411);
+font-family: "Amiri";
+font-size: 2rem;
+letter-spacing: 0.5rem;
+}
+
+.juletraestaending-title-margin {
+  margin-bottom: 0.4rem;
+}
+
+.juletraestanding-text {
+  margin: 3% 4%;
+  color: var(--hvid);
+  font-size: 0.8rem;
+}
+
+.juletraestaending-program-grid-container {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 1.2fr 1.2fr;
+}
+
+.juletraestaending-program-text-container {
+  grid-row: span 2;
+  background-color: #f2eeb398;
+  padding: 2%;
+  font-size: 0.7rem;
+}
+
+.juletraestaending-program-text-container li {
+  list-style: none;
+  margin: 1.1rem 0;
+}
+
+.juletraestaending-program-text-container h4 {
+  font-family: "Amiri";
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.image-container {
+  grid-row: span 2;
+  font-size: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .juletraestaending-banner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .juletraestaending-program-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr;  
+  }
+
+  .juletrae-img {
+    display: none;
+  }
+  .juletraestaending-title {
+    font-size: 7vw;
+  }
+
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* 
+  .tivoli-page-color {
+    background-color:var(--rød);
+     }
+   
+   .tivoli-banner {
+     background-color: green;
+     height: 160vh;
+     width: 12%;
+   }
+   
+   .tivoli-banner-left-side {
+     float: left;
+   }
+   
+   .tivoli-banner-right-side {
+     float: right;
+   }
+   
+   .tivoli-title {
+     color: white;
+     background-color: rgba(0, 0, 0, 0.397);
+     padding: 0.3rem;
+     text-align: center;
+     margin: 0 4%;
+     font-size: 2.2rem;
+     letter-spacing: 0.5rem;
+     font-family: "Amiri";
+   }
+   
+   .tivoli-grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     margin: 3% 4%;
+     }
+   
+   .tivoli-grid-container article {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+   }
+   
+   .tivoli-text-container {
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+     background-color: #f2eeb398;
+     padding: 1rem;
+     margin-bottom: 2rem;
+     font-size: 0.9rem;
+    }
+   
+    .tivoli-text-container h4 {
+      font-weight: normal;
+      font-family: "Amiri";
+      font-size: 1.3rem;
+      letter-spacing: 0.2rem;
+    }
+   
+    .tivoli-price {
+    padding: 5% 0;
+    font-size: 1.1rem;
+    }
+   
+    @media screen and (max-width: 767px) {
+     .tivoli-grid-container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr; 
+     }
+     .tivoli-title {
+       font-size: 8vw;
+     }
+   
+     .tivoli-banner {
+       display: none;
+     }
+    }
+    */
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
 
 
@@ -1962,9 +2139,6 @@ height: 1.5rem;
     
   }
 
-  .aalborg-article img {
-    
-  }
   
 
   .aalborg-banner {
