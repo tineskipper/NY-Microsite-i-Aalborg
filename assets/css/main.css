@@ -1822,12 +1822,155 @@ grid-template-areas:
 /*historie slut*/
  /*det sker også i aalborg start*/
 
+   .aalborg-container {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    gap: none;
+    background-color: var(--rød);
+  }
+
+  .aalborgbanner-højre {
+    background-image: url("C:/Users/rikke/OneDrive/Dokumenter/NY-Microsite-i-Aalborg/assets/img/Julebanner.jpg");
+    background-color: var(--rød);
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 5;
+  }
+
+  .aalborg-h1{
+    font-family: amiri;
+    background-color: var(--grå);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    margin: 0.5rem 1rem 1rem;
+    color: var(--hvid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3rem;
+  }
+
+  .aalborg-article1{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3 ;
+    
+  }
+  .aalborg-article2{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4 ;
+  } 
+  .aalborg-article3{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5 ;
+  }
+
+.aalborgbanner-venstre {
+  background-image: url("C:/Users/rikke/OneDrive/Dokumenter/NY-Microsite-i-Aalborg/assets/img/Julebanner.jpg");
+  background-color: var(--rød);
+  grid-column: 3 / 4 ;
+  grid-row: 1 / 5;
+}
+
+.aalborg-article {
+  
+  display: grid;
+  grid-template-columns:   2.5fr 0.5fr 1fr;
+  grid-template-rows: 0.3fr 1.6 fr 0.5fr;
+  background-color: var(--lys);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  gap: 0.3rem;
+  margin: 0.5rem 1rem 0.5rem;
+
+}
+
+.aalborg-article img { 
+  width: 10rem;
+  width: 10rem;
+grid-column: 3 / 4;
+grid-row: 1 / 4;
+}
+
+.aalborg-article h2{
+  grid-row: 1 / 2;
+grid-column: 1 / 3;
+font-family: amiri;
+letter-spacing: 0.3rem;
+font-size: 1.3rem;
+}
+
+.aalborg-article p {
+  grid-row: 2 / 3;
+grid-column: 1 / 3;
+font-size: 0.8rem;
+}
+
+.aalborg-article a {
+  background-color: var(--mørkgrøn);
+color: var(--hvid);
+grid-column: 2 / 3;
+grid-row: 3 / 4;
+text-decoration: none;
+text-align: center;
+width: 10rem;
+height: 1.5rem;
+}
 
 
+@media screen and (max-width: 1023px) {
+  .aalborg-container{
+    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-columns: auto;
+  }
+  .aalborg-banner {
+    display: none;
+  }
 
+  .aalborg-article{
+    display: grid;
+    grid-column: 200px;
+    grid-row: auto auto auto auto;
+    
+    
+  }
 
+  .aalborg-article img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    
+  }
 
+  .aalborg-article h2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 75vw;
+  }
+  .aalborg-article p {
+    display: none;
+  }
+  .aalborg-article a {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+ }
 
+@media screen and (max-width: 767px) {
+  .aalborg-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr; 
+    
+  }
+
+  .aalborg-article img {
+    
+  }
+  
+
+  .aalborg-banner {
+    display: none;
+  }
+ }
 
 
 
