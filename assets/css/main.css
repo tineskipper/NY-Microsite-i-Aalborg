@@ -7,6 +7,7 @@
   :root {
     --grå: #0808088a;
     --rød: #730202;
+    --mørkerød: #5D0202;
     --lys: #F2EEB3;
     --mørkgrøn: #222601;
     --lysgrøn: #384002;
@@ -41,52 +42,48 @@
 
 
   /*nav start*/
-  header h1 {
+  header {
     text-align: center;
-    color: rgb(0, 0, 0);
-    background-color: #5D0202;
-   
   }
-  
+  header h1 {
+    color: rgb(255, 255, 255);
+    background-color:#730202;
+  }
+
   header ul {
   display: block;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  background-color: #5D0202;
+  background-color:#730202;
   overflow: hidden;
- 
-  
-  
   }
 
   header li {
-    float: left;
-   
     
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    display: inline-block;
    
   }
   header li:hover {
-    background-color: #730202;
+    background-color:#5D0202;
   }
-  
-  
   
   header a, .dropbtn {
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
     padding: 8px;
     text-decoration: none;
     text-align: center;
     padding: 14px 16px;
     text-decoration: underline;
     
-    
-   
   }
   
   header a:hover .dropdown:hover .dropbtn {
-    background-color:#730202;
+    background-color:#5D0202;
     color: #000000;
   }
   
@@ -97,14 +94,14 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #730202;
+    background-color:#5D0202;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -112,7 +109,7 @@
   }
   
   .dropdown-content a:hover {
-    background-color:#5D0202
+    background-color:#730202;
   }
   
   .dropdown:hover .dropdown-content {
@@ -417,6 +414,114 @@
 
 
   /*forside slut*/
+  /*footer start*/
+
+footer {
+  display: grid;
+  text-align: left;
+  padding: 3px;
+  background-color: #730202;
+  color: #ffffff;
+  font-size: 12px;
+
+}
+footer, div {
+  background-color: #730202;
+  color: #ffff;
+  padding: 1%;
+  
+}
+footer ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+
+.footer-boks {
+  grid-template-columns: auto, auto,auto, auto;
+  justify-content: space-evenly;
+
+}
+
+.footer-boks2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.footer-boks3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.footer-boks4 {
+  grid-column-start: 56;
+  grid-column-end: 57;
+  grid-row-start: 1;
+  
+}
+
+.footer-boks5 {
+  grid-column-start: 56;
+  grid-column-end: 57;
+}
+
+.footer-boks6 {
+  grid-column-start: 56;
+  grid-column-end: 57;
+ 
+}
+ .logo {
+   grid-column-start: 28;
+   grid-column-end: 29;
+   grid-row-start: 1;
+ }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer slut*/
   /*boder start*/
 
 
