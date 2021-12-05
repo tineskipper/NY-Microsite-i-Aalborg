@@ -485,6 +485,168 @@ footer ul {
 
 
 
+  body{
+    background-color: var(--rød);
+  }
+
+
+#scroll{
+  font-family: 'amiri', serif;
+  font-size:22px;
+  color:white;
+  text-align: center;
+  background-color: #5D0202;
+  margin-left: 3.5rem;
+  margin-right: 0rem;
+  padding: 1rem;
+  width:60rem;
+  
+}
+
+html{
+  letter-spacing: 0.2rem;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-color: var(--rød);
+}
+.boder-grid-container-main{
+  justify-content: space-evenly;
+display:grid;
+grid-template-columns:16.5rem 16.5rem 16.5rem;
+grid-template-rows: 32rem 32rem 32rem 32rem 32rem 32rem 32rem;
+grid-area: maingrid;
+grid-template-areas:
+'enkeltbod enkeltbod enkeltbod'
+'enkeltbod enkeltbod enkeltbod'
+'enkeltbod enkeltbod enkeltbod'
+'enkeltbod enkeltbod enkeltbod'
+'enkeltbod enkeltbod enkeltbod'
+'enkeltbod enkeltbod enkeltbod'
+'spacingbod enkeltbod spacingbod'
+}
+.spacingbod{
+  grid-area: spacingbod;
+  width:16.5rem;
+  height: 28rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  text-decoration: none;
+}
+
+.spacingbod-b{
+  grid-area: spacingbod;
+  width:16.5rem;
+  height: 28rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  text-decoration: none;
+}
+
+#kortid{
+  height: auto;
+  width:1300px;
+  border-color:#964242;
+  border-width: 5px;
+  border-style: solid;
+  margin-bottom:3rem;
+  margin-top:5rem;
+  margin-left:3.7rem;
+  align-content: center;
+  grid-area: kortid;
+}
+.flex-wrapper{
+  justify-content:space-between;
+  display:flex;
+  flex-wrap:wrap;
+}
+.enkeltbod-full{
+  width:16.5rem;
+  height: 28rem;
+}
+.enkeltbod{
+background-color:#C49973 ;
+padding-bottom: 0.5rem;
+height:28rem;
+}
+.underbod{
+  width:16.5rem;
+  height: 2rem;
+  background-color: #C49973;
+}
+.bodknap{
+  width:6rem;
+  background-color: var(--lysgrøn);
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-width: 1px;
+  border-color:var(--mørkgrøn);
+  border-style:solid;
+  color:#D6D299;
+  text-decoration: none;
+  position:relative;
+  margin-left:5rem;
+}
+.boder-grid-container-wrapper{
+  display: grid;
+grid-template-columns: 220px auto 220px;
+grid-template-rows: 14rem auto 30rem;
+max-height: 100vh;
+grid-template-areas:
+'bannerven udvalg bannerhøj'
+'bannerven maingrid bannerhøj'
+'kortid kortid kortid'
+}
+.sidevenstre{
+  width: 10rem;
+  max-height:6378px;
+  grid-area: bannerven;
+}
+.sidehøjre{
+  width: 10rem;
+  max-height: 6378px;
+  grid-area: bannerhøj;
+  }
+.udvalg{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  grid-area:udvalg;
+  
+}
+.udvalgbox{
+  font-family: 'amiri', serif;
+  color:white;
+  text-align: center;
+  background-color: #5D0202;
+  margin-left: 3.5rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  width:60rem;
+}
+.usynlig1{
+  width:100%;
+  height: 1.4rem;
+}
+.bodp{
+  font-size: 10px;
+  padding-left:10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+.bodtitel{
+  margin-left:1.4rem;
+  margin-bottom: 0.5rem;
+  width:300px;
+  height:80px;
+  background-color: #957558;
+  color:rgb(0, 0, 0);
+  text-align:center;
+  align-content: stretch;
+  font-family: 'amiri', serif;
+}
 
 
 
@@ -493,17 +655,258 @@ footer ul {
 
 
 
+@media screen and (max-width: 1024px){
+  .boder-grid-container-wrapper{
+    display: grid;
+    grid-template-columns: 1024px;
+    grid-template-rows: 12.4rem 13900px 5rem;
+    max-height: 100vh;
+    min-width:1005px;
+    grid-template-areas:
+    'udvalg'
+    'maingrid'
+    'kortid';
+    }
+
+  .boder-grid-container-main{
+  justify-content: space-evenly;
+  display:grid;
+  max-height:100vh;
+  grid-template-columns:40rem;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-area: maingrid;
+  grid-template-areas:
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod'
+  'enkeltbod';
+  }
+
+  body{
+    width:700px;
+    height:100%;
+  }
+
+  #kortid{
+    grid-area: kortid;
+    object-fit:contain;
+    height: auto;
+    width:1500px;
+    border-color:#964242;
+    border-width: 5px;
+    border-style: solid;
+    margin-top:590rem;
+    margin-bottom:10rem;
+    margin-left:0;
+  }
+
+
+  .enkeltbod{
+    background-color:#C49973 ;
+    height:1000x;
+    width:680px;
+    grid-area:enkeltbod;
+    justify-content:center;
+    position:relative;
+  }
+
+  .underbod{
+    width:680px;
+    height: 2rem;
+    margin-bottom: 2rem;
+    padding-left:160px;
+  }
+
+  .udvalgbox{
+    margin-left:100px;
+    width: 805px;
+    margin-right: 0rem;
+  }
+
+  #scroll{
+    margin-left:100px;
+    width:805px;
+    margin-right: 0rem;
+  }
+
+  .flex-wrapper{
+  margin-left: 100px;
+  width:830px;
+  padding-bottom:5rem;
+  }
+
+  .flex-wrapper-b{
+    display:none;
+    margin:0;
+    padding:0;
+  }
+
+  .spacingbod{
+    display:none;
+    margin:0;
+    padding:0;
+  }
+
+  .sidehøjre{
+    display:none;
+    width:0;
+  }
+  .sidevenstre{
+    display: none;
+    width:0;
+  }
+
+  html{
+    width:1005px;
+    margin:0;
+    height:100%;
+  }
+
+  .bodtitel{
+    width:500px;
+    height:40px;
+    margin-left:85px;
+
+  }
+}
 
 
 
 
 
+@media screen  and (max-width:767px){
+  .udvalgbox{
+    margin-left:2rem;
+    width: 660px;
+    margin-right: 0rem;
+  }
 
+  .udvalg{
+    margin-right:0rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    grid-area:udvalg;
+    width:660px;
+  }
 
+  #scroll{
+    margin-left:2rem;
+    width:660px;
+    margin-right: 0rem;
+  }
 
+  .usynlig1{
+    width:1rem;;
+    height: 1.4rem;
+  }
 
+  .boder-grid-container-wrapper{
+    display: grid;
+    grid-template-columns: 730px;
+    grid-template-rows: 12.4rem 13900px 5rem;
+    max-height: 100vh;
+    min-width:745px;
+    margin-right:0px;
+    grid-template-areas:
+    'udvalg'
+    'maingrid'
+    'kortid';
+    }
 
+  .boder-grid-container-main{
+    justify-content: space-evenly;
+    min-width:745px;
+    margin-right:0px;
+    display:grid;
+    max-height:100vh;
+    grid-template-columns:40rem;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-area: maingrid;
+    grid-template-areas:
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod'
+    'enkeltbod';
+    }
+  body{
+    width:745px;
+    height:100%;
+  }
 
+  .flex-wrapper{
+    margin-left: 28px;
+    width:680px;
+    padding-bottom:5rem;
+    margin-right:0px;
+    }
+
+    html{
+      width:745px;
+      margin:0;
+      height:100%;
+    }
+
+    .enkeltbod{
+      background-color:#C49973 ;
+      height:1000x;
+      width:600px;
+      grid-area:enkeltbod;
+      justify-content:center;
+      position:relative;
+      margin-left:5rem;
+    }
+  
+    .underbod{
+      width:600px;
+      height: 2rem;
+      margin-bottom: 2rem;
+      padding-left:160px;
+      margin-left:5rem;
+    }
+
+    #kortid{
+      grid-area: kortid;
+      object-fit:contain;
+      height: auto;
+      width:1530px;
+      border-color:#964242;
+      border-width: 5px;
+      border-style: solid;
+      margin-top:585rem;
+      margin-bottom:0rem;
+      margin-left:4px;
+    }
+}
 
 
 
